@@ -13,4 +13,4 @@ WORKDIR /code
 ADD . /code
 RUN pip install -r requirements.txt
 
-CMD ["/usr/bin/env", "python", "src/code.py"]
+CMD ["/usr/bin/env", "python", "src/tutorial/tutorial.py"]
