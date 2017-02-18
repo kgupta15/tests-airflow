@@ -1,0 +1,11 @@
+version: '2'
+services:
+  nmf:
+    image: kapil/airflow-test:latest
+    build: .
+    environment:
+      PORT: 9898
+    ports:
+      - "9898:9898"
+    volumes:
+      - .:/code
